@@ -80,7 +80,7 @@ def scrape_season(school_set, year):
             final_df['game_location'].replace(['N'], 'Neutral')
             final_df['game_location'].replace([''], 'Home')
             final_df['MOV'] = pd.to_numeric(final_df['pts']) - pd.to_numeric(final_df['opp_pts'])
-            sleep(2)
+            sleep(3.1)
     return final_df
 
 
